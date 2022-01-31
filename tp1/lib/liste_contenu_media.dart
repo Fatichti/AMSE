@@ -29,44 +29,56 @@ final series = [
 
 final film = [
   MediaModel(
-    imageURL:"film imageURL1",
-    title: "film title1",
-    description: "film description1",
+    imageURL:"assets/films/starwars_reveil_force",
+    title: "Star Wars - Le réveil de la force",
+    description: "Film de science-fiction américain de type space opera coécrit et réalisé par J. J. Abrams\nSorti en 2015, soit dix ans après la sortie de La Revanche des Sith.",
   ),
   MediaModel(
-    imageURL:"film imageURL2",
-    title: "film title2",
-    description: "film description2",
+    imageURL:"assets/films/bienvenu_chtis.jpg",
+    title: "Bienvenue chez les ch'tis",
+    description: "Film français réalisé par Dany Boon, sorti le 20 février 2008 dans le Nord-Pas-de-Calais et dans quelques salles de la Somme.\nLe 27 février dans le reste de la France, en Belgique et en Suisse, un jour après au Luxembourg, et le 25 juillet au Canada.",
+  ),
+  MediaModel(
+    imageURL:"assets/films/sully.jpg",
+    title: "Sully",
+    description: "Film américain coproduit et réalisé par Clint Eastwood et sorti en 2016.\nIl s'agit d'un film biographique inspiré de l'histoire vraie de l'amerrissage forcé du vol US Airways 1549 sur le fleuve Hudson, réussi par le pilote Chesley « Sully » Sullenberger en janvier 2009.\n Il est adapté du livre Highest Duty (2009) écrit par le pilote avec l'auteur Jeffrey Zaslow.",
+  ),
+  MediaModel(
+    imageURL:"assets/films/retour_futur",
+    title: "Retour vers le futur",
+    description: "Film de science-fiction américain réalisé par Robert Zemeckis, sorti en 1985.\nL'intrigue relate le voyage dans le passé d'un adolescent, Marty McFly, à bord d'une machine à voyager dans le temps fabriquée par le docteur Emmett Brown, à partir d'une voiture de modèle DeLorean DMC-12",
   ),
 ];
 
 
 // On génére la liste avec les élèments
 class ListeContenuMedia extends StatelessWidget {
-  
-  void affichage_test(){
-    print("liste contenue média appelée");
-  }
+    
   @override
   Widget build(BuildContext context) {
    return Scaffold(
       appBar: AppBar(
-        title: Text("Liste des séries"),
+        title: Text("Liste des films"),
       ),
       body: ListView.builder(
         itemBuilder: (context, index) {
           return Card(
             child: ListTile(
-                title: Text(series[index].title, style: TextStyle(fontSize: 30)),
-                subtitle: Text('Sous-titre ' + series[index].title),
-                leading: CircleAvatar(
-                  child: Text(
-                      series[index].title[0], // prendre le premier caractère du texte
-                      style: TextStyle(fontSize: 20)),
-                )),
+                title: Text(film[index].title, style: TextStyle(fontSize: 18)),
+                subtitle: Text(film[index].description, style: TextStyle(fontSize: 10)),
+                leading: ConstrainedBox(
+                    constraints: BoxConstraints(
+                      minWidth: 60,         //44
+                      minHeight: 120,        //44
+                      maxWidth: 80,          //64
+                      maxHeight: 140,         //64
+                    ),
+                    child: Image.asset(film[index].imageURL, fit: BoxFit.cover),
+                    ),
+              ),
           );
         },
-        itemCount: series.length,
+        itemCount: film.length,
       ),
     );
   }

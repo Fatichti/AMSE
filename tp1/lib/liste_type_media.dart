@@ -35,7 +35,7 @@ class ListeTypeMedia extends StatelessWidget {
                         width: 300.0,
                         decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('lib/img/test_img.png'),
+                          image: AssetImage('assets/films/test_img.png'),
                           fit: BoxFit.fill,
                         ),
                         shape: BoxShape.rectangle,
@@ -84,7 +84,7 @@ class ListeTypeMedia extends StatelessWidget {
                         width: 300.0,
                         decoration: const BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('lib/img/test_img.png'),
+                          image: AssetImage('assets/films/test_img.png'),
                           fit: BoxFit.fill,
                         ),
                         shape: BoxShape.rectangle,
