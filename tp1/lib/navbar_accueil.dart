@@ -17,17 +17,13 @@ class _MyStatefulWidgetState extends State<NavigationAccueil> {
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
     Text(
-      'Index 0: Home',
+      "Bienvenue sur la page d'accueil.\nEn cours de développement",
       style: optionStyle,
     ),
     ListeTypeMedia(),
     
     Text(
-      'Index 2: About',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Settings',
+      "Bienvenue sur la page d'informations générales de l'application.\nEn cours de développement",
       style: optionStyle,
     ),
   ];
@@ -63,11 +59,6 @@ class _MyStatefulWidgetState extends State<NavigationAccueil> {
             icon: Icon(Icons.info),
             label: 'About',
             backgroundColor: Colors.purple,
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-            backgroundColor: Colors.pink,
           ),
         ],
         currentIndex: _selectedIndex,

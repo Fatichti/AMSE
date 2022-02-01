@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-
-import 'liste_contenu_media.dart';
 import 'navbar_accueil.dart';
 
 void main() {
@@ -16,8 +14,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       title: _title,
-      home: NavigationAccueil()
-      //home: MaListView(),
+      home: NavigationAccueil()   //On appelle la classe principale définie dans navbar_accueil.dart
     );
   }
 }
