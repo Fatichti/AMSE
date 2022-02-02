@@ -7,7 +7,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
 
-  static const String _title = 'Flutter Code Sample';
+  static const String _title = 'Application : Gestion Medias par Fabien';
 
   @override
   Widget build(BuildContext context) {

@@ -38,7 +38,7 @@ class _MyStatefulWidgetState extends State<NavigationAccueil> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('BottomNavigationBar Sample'),
+        title: const Text('Gestion des Médias'),
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
