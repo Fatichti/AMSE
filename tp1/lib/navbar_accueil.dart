@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tp1/liste_type_media.dart';
 
-import 'liste_contenu_media.dart';
-
-
 class NavigationAccueil extends StatefulWidget {
   const NavigationAccueil({Key? key}) : super(key: key);
 
@@ -13,18 +10,17 @@ class NavigationAccueil extends StatefulWidget {
 
 class _MyStatefulWidgetState extends State<NavigationAccueil> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
+  static const TextStyle optionStyleHome = TextStyle(fontSize: 20, fontWeight: FontWeight.bold);
+  static const TextStyle optionStyleAbout = TextStyle(fontSize: 20);
   static List<Widget> _widgetOptions = <Widget>[
     Text(
-      "Bienvenue sur la page d'accueil.\nEn cours de développement",
-      style: optionStyle,
+      "Bienvenue sur la page d'accueil.\n\nNaviguer, découvrer tout un ensemble d'informations sur différents médias !",
+      style: optionStyleHome,
     ),
     ListeTypeMedia(),
-    
     Text(
-      "Bienvenue sur la page d'informations générales de l'application.\nEn cours de développement",
-      style: optionStyle,
+      "Cette application a été réalisée par Fabien Plouvier.\n\nElle contient une variété d'informations sur différents types de média comme :\Séries, Films, BD\n\n(version du 06/02/2022)",
+      style: optionStyleAbout,
     ),
   ];
 
