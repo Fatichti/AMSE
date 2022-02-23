@@ -14,7 +14,7 @@
     
         
 ## Que contient le dossier ?
-Elle contient tous les fichiers nécessaires au TP1
+Il contient tous les fichiers nécessaires au TP1
 Le comportement de l'application est défini par différents fichiers (langage DART) qui décompose l'application :
 
 - **library.dart :**  
