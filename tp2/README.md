@@ -11,8 +11,8 @@
 1. Réaliser une application de jeu de taquin
     
         
-## Il contient le dossier ?
-Elle contient tous les fichiers nécessaires au TP2
+## Que contient le dossier ?
+Il contient tous les fichiers nécessaires au TP2
 Le comportement de l'application est défini par différents fichiers (langage DART) qui décompose l'application :
 
 - **main.dart :**  
