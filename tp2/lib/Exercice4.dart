@@ -30,7 +30,7 @@ class DisplayTileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Affichage d\'/une tuile'),
+        title: Text("Affichage d'une tuile"),
         centerTitle: true,
       ),
       body: Center(

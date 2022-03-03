@@ -19,16 +19,20 @@ Le comportement de l'application est défini par différents fichiers (langage D
 *Initialisation de l'application puis affiche la navigation générale*  
 - **library.dart :**  
 *Données et constantes nécessaires pour le fonctionnenement de l'application*  
-- **afficher_image.dart :**  
+- **Exercice1.dart :**  
 *Exercice 1 : Afficher une image à l'aide du Widget Image*  
-- **transformer_image.dart :**  
+- **Exercice2.dart :**  
 *Exercice 2 : Transformer une image à l'aide des widgets : Slider, Transform*  
-- **liste_exos.dart :**  
+- **Exercice3.dart :**  
 *Exercice 3 : Menu et navigation entre pages*  
-- **afficher_tuile.dart**  
+- **Exercice4.dart**  
 *Exercice 4 : Affichage d'une tuile (un morceau d'image)*  
-- **plateau_tuile.dart**  
-*Exerice 5 : Génération du plateau de tuiles*
+- **Exercice5a.dart** **Exercice5b.dart** **Exercice5c.dart**  
+*Exerice 5 : Différentes version de la génération du plateau de tuiles*
+- **Exercice6a.dart** **Exercice6b.dart**  
+*Exercice 6 : Différentes version pour échanger deux tuiles*
+- **Exercice7.dart**  
+*Exercice 7 : Jeu de taquin (possibilité de modifier le nombre de division et d'annuler le dernier coup) avec une image provenant du web*
 
 ## Comment utiliser l'application ?
 ⚠️Pour que tout fonctionne correctement, merci de respecter les étapes **d'installation** et **d'exécution** de l'application.

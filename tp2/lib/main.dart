@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'liste_exos.dart';
+import 'Exercice3.dart';
 import 'library.dart';
 
 void main() {
@@ -7,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  static const String _title = 'Application : Jeu de Taquin par Fabien';
+  static const String _title = 'Application : UV AMSE par Fabien';
 
   @override
   Widget build(BuildContext context) {
